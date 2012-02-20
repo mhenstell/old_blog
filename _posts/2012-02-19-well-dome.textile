@@ -1,0 +1,12 @@
+---
+layout: post
+title: Well Dome
+---
+
+h1. {{ page.title }}
+
+p(meta). 19 Feb 2012 - New York
+
+!http://www.flickr.com/photos/osr/6900501949/!
+
+We made a geodesic dome!
