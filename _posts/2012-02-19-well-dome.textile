@@ -7,17 +7,17 @@ h1. {{ page.title }}
 
 p(meta). 19 Feb 2012 - New York
 
-!{width:80%}http://farm8.staticflickr.com/7050/6900501949_4d5e97703f_z.jpg!:http://www.flickr.com/photos/osr/6900501949/
+!{width:586px}http://farm8.staticflickr.com/7050/6900501949_4d5e97703f_z.jpg!:http://www.flickr.com/photos/osr/6900501949/
 More pictures on "Trammell Hudson's":http://www.flickr.com/photos/osr/6900501949/ photostream.
 
 We built a geodesic dome! I sized out the largest dome we could make using five foot by one inch PVC tubes (a little over eight feet in diameter), and after brunch last Saturday, we walked a rainy mile to Lowes to buy PVC. After trying unsuccessfully to join the PVC using rubber tubing, Adam came up with a great method of flattening the ends and attaching them.
 
-!{width:80%}http://www.nycresistor.com/wp-content/uploads/2012/02/IMG_0429-1024x768.jpg!
+!{width:586px}http://www.nycresistor.com/wp-content/uploads/2012/02/IMG_0429-1024x768.jpg!
 More progress shots courtesy of Adam: "Dome If You Want To":http://www.nycresistor.com/2012/02/18/dome-if-you-want-to/
 
 Last night we put on Logan's Run and started dooming. After a brief pause to reheat and bend the ends to the proper angle, the dome went together with great success:
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/HYQcync6Lgw" frameborder="0" allowfullscreen></iframe>
+<iframe width="586px" height="400" src="http://www.youtube.com/embed/HYQcync6Lgw" frameborder="0" allowfullscreen></iframe>
 
 Thanks to Justin, Adam, Angela, Ryan, Nick, Trammell, Mimi, Holly, and Kat for helping make physics work to our advantage.
 
