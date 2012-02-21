@@ -1,0 +1,15 @@
+---
+layout: post
+title: Put A Bird On It
+---
+
+h1. {{ page.title }}
+
+p(meta). 20 Feb 2012 - New York
+
+!{width:586px}http://i.imgur.com/dstJ0.jpg!
+The lovely "Shayna.TV":http://shayna.tv modeling a bird shirt.
+
+We made some really simple screen prints of a bird that Shayna drew, on some cool shirts we got wholesale from a.s.tees:http://astees.com/. The first one I made didn't come out perfectly because of a crease in the cardboard I used under the shirt, but it still looked cool. A second try also came out a little weird because the paint had dried in the mesh faster than we expected, but on the whole they came out pretty nice.
+
+In another week or two, I hope to try mixing textile ink and some powdered glass beads, and screen printing the (hopefully) retroreflective ink for some cool light effects.
