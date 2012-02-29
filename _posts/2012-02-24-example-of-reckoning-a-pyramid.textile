@@ -8,3 +8,8 @@ h1. {{ page.title }}
 p(meta). 24 Feb 2012 - New York
 
 !{width:586px}../../../../images/pyramidscreen.jpg!
+
+Shayna.tv drew a pyramid on a screen. We printed it on a shirt (three times!) It came out pretty cool.
+I drew a banana, but it didn't come out as well.
+
+!{width:586px}../../../../images/pyramidshirt.jpg!
