@@ -13,9 +13,11 @@ Check out this cool hat I made. It has a one meter strip of "individually addres
 
 !{width:586px}../../../../images/party-time-hat.jpg!
 
-There's some really hacky code for the hat's Arduino that I threw up in NYC Resistor's "Grab-Bag":https://github.com/nycresistor/Grab-Bag/tree/master/maxblinkystrip/lightstrip repository. It's based some the example code I stole from Sparkfun's Nathan Seidle, and has 8 different blinky modes.
+There's some really hacky code for the hat's Arduino that I threw up in NYC Resistor's "Grab-Bag":https://github.com/nycresistor/Grab-Bag/tree/master/maxblinkystrip/lightstrip repository. It's based some the example code I stole from Sparkfun's Nathan Seidle, and has eight different blinky modes.
 
-Along with the hat, I had a checkerboard flannel shirt, which I modified with some retroreflective fabric. I sewed the reflective fabric onto each of the white squares on the shirt, and I had a 15 inch "Mondrian":http://en.wikipedia.org/wiki/Piet_Mondrian -esque piece on the back, also made of retroreflective tape. I took the ensemble to "Disorient's GLAMTECH":http://wiki.disorient.info/index.php?title=GlamTech event this weekend, where I was the flashiest thing in the room. The net result was that in addition to appearing as a blinding flash on every photo taken of me, the light coming off my hat lit up everyone else in the room who was wearing retroreflective clothing.
+Along with the hat, I had a checkerboard flannel shirt, which I modified with some retroreflective fabric. I sewed the reflective fabric onto each of the white squares of the shirt, and I had a 15 inch "Mondrian":http://en.wikipedia.org/wiki/Piet_Mondrian -esque piece on the back, also made of retroreflective tape. I took the ensemble to "Disorient's GLAMTECH":http://wiki.disorient.info/index.php?title=GlamTech event this weekend, where I was the flashiest thing in the room. The net result was that in addition to appearing as a blinding flash on every photo taken of me, the light coming off my hat lit up everyone else in the room who was wearing retroreflective clothing.
 
 !{width:586px}../../../../images/party-time-shirt.jpg!
-Here's a rather poor picture from when I had finished the first sleeve. Notice the "Pyramid Shirt":http://mmmaaa.xxx/2012/02/24/example-of-reckoning-a-pyramid.html
+Here's a rather poor picture from when I had finished the first sleeve. Notice the "Pyramid Shirt":http://mmmaaa.xxx/2012/02/24/example-of-reckoning-a-pyramid.html.
+
+!{width:586px}../../../../images/party-time-mondrian.jpg!
