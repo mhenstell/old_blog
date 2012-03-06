@@ -18,6 +18,6 @@ There's some really hacky code for the hat's Arduino that I threw up in NYC Resi
 Along with the hat, I had a checkerboard flannel shirt, which I modified with some retroreflective fabric. I sewed the reflective fabric onto each of the white squares of the shirt, and I had a 15 inch "Mondrian":http://en.wikipedia.org/wiki/Piet_Mondrian -esque piece on the back, also made of retroreflective tape. I took the ensemble to "Disorient's GLAMTECH":http://wiki.disorient.info/index.php?title=GlamTech event this weekend, where I was the flashiest thing in the room. The net result was that in addition to appearing as a blinding flash on every photo taken of me, the light coming off my hat lit up everyone else in the room who was wearing retroreflective clothing.
 
 !{width:586px}../../../../images/party-time-shirt.jpg!
-Here's a rather poor picture from when I had finished the first sleeve. Notice the "Pyramid Shirt":http://mmmaaa.xxx/2012/02/24/example-of-reckoning-a-pyramid.html.
+Here's a poor picture from when I had finished the first sleeve. Notice the "Pyramid Shirt":http://mmmaaa.xxx/2012/02/24/example-of-reckoning-a-pyramid.html.
 
 !{width:586px}../../../../images/party-time-mondrian.jpg!
