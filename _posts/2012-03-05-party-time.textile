@@ -1,0 +1,23 @@
+---
+layout: post
+title: Party Time
+---
+
+h1. {{ page.title }}
+
+p(meta). 5 Mar 2012 - New York
+
+<iframe width="586" height="315" src="http://www.youtube.com/embed/6mXPC8GwuAs" frameborder="0" allowfullscreen></iframe>
+
+Check out this cool hat I made. It has a one meter strip of "individually addressable RGB LEDs":http://www.sparkfun.com/products/10312 wrapped around it, along with a "Really Bare Bones Board":http://shop.moderndevice.com/products/rbbb-kit Arduino clone chilling out in the back. The contraption is wired to a brushed motor driver module (just for the 5V regulator) and a LiFe battery that will let the hat blink away happily all night.
+
+!{width:586px}../../../../images/party-time-hat.jpg!
+
+There's some really hacky code for the hat's Arduino that I threw up in NYC Resistor's "Grab-Bag":https://github.com/nycresistor/Grab-Bag/tree/master/maxblinkystrip/lightstrip repository. It's based some the example code I stole from Sparkfun's Nathan Seidle, and has eight different blinky modes.
+
+Along with the hat, I had a checkerboard flannel shirt, which I modified with some retroreflective fabric. I sewed the reflective fabric onto each of the white squares of the shirt, and I had a 15 inch "Mondrian":http://en.wikipedia.org/wiki/Piet_Mondrian -esque piece on the back, also made of retroreflective tape. I took the ensemble to "Disorient's GLAMTECH":http://wiki.disorient.info/index.php?title=GlamTech event this weekend, where I was the flashiest thing in the room. The net result was that in addition to appearing as a blinding flash on every photo taken of me, the light coming off my hat lit up everyone else in the room who was wearing retroreflective clothing.
+
+!{width:586px}../../../../images/party-time-shirt.jpg!
+Here's a poor picture from when I had finished the first sleeve. Notice the "Pyramid Shirt":http://mmmaaa.xxx/2012/02/24/example-of-reckoning-a-pyramid.html.
+
+!{width:586px}../../../../images/party-time-mondrian.jpg!
