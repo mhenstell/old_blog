@@ -1,0 +1,13 @@
+---
+layout: post
+title: DangerArray (Incandescent Lighting Array)
+---
+The DangerArray (or Incandescent Lighting Array) was a quick project I threw together for the NYC Resistor Interactive Show. It consists of seventy two 120 Volt halogen lamps, each individually controllable and dimmable by way of a large array of shift registers and mosfets, controlled from one USB-enabled microcontroller. The Array uses the same C++ and Processing software that we used on the "DomeStar":http://blinkiverse.com/domestar.html.
+
+!{width:586px}../../../../images/danger-array-1.jpg!
+
+DJ Friar Tuck does his thing in front of the sound-reactive heat-machine known as the DangerArray.
+
+!{width:586px}../../../../images/danger-array-2.jpg!
+
+The DangerArray is still installed at NYC Resistor, although it is no longer powered-up, for good reason.
