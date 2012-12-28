@@ -1,0 +1,58 @@
+---
+layout: post
+title: Space Detector
+---
+For the holidays this year, the girlfriend and I came up with the idea of celebrating Spacemas (unrelated to the Canada's Space Channel. We don't own TVs, nor do we speak Canadian). Spacemas is an ill-defined holiday, burdened by neither Capitalism nor religion, which exists solely as a periodic moral booster for the brave men and women living on the frontier of space. At least, that's what it will become, if we have our way. And what better way to commemorate the first Spacemas than with a Cosmic Ray detector?
+
+!{width:586px}../../../../images/cosmic-shower.jpg!
+
+h2. What is a Cosmic Ray? 
+
+Here's a more "authoritative source":http://en.wikipedia.org/wiki/Cosmic_ray, but what it boils down to is this: high-energy particles (mostly protons) are spat out from explosions on our Sun, supernovas, even quasars and other phenomenon from outside our galaxy. These particles are constantly bombarding us from every direction, and although some are blocked by the solar wind and the Earth's magnetic field, many make their way through to our atmosphere, where some of them slam into air molecules, creating a cascade of secondary particles, such as neutrons, mesons, pions, and kaons. Some of these decay into "Muons":http://en.wikipedia.org/wiki/Muons, which, because of their relatively long decay lifetime (and time dilation effects from going 0.98 times the speed of lite), are able to reach the surface.
+
+And it turns out that Muons are actually fairly easy to detect. They readily ionize Geiger-Müller tubes, just like beta radiation . The first resource I came across was from "Robert Hart":http://hardhack.org.au/geiger_muller_detector, who has done some really cool stuff with Muon detectors. The secret sauce here is Coincidence Detection. When a Muon passes through, it will ionize one tube, and unlike beta or gamma radiation, it will keep on going, ionizing the next tube. The two pulses appear at nearly the same instant; you run two or more geiger counters into an AND gate, and there anything that hits multiple tubes at the same moment was probably a Muon. Easy peasy.
+
+I ordered some tubes off of ebay, but after a bit more reading, realized that they might not work so good for this application. The larger a Geiger tube is, the more sensitive it is (larger volume for particles to hit). The tubes I ordered were very small, and by early December, it was much too late to order any tubes from Russia. Every tube you could dream of is available (and inexpensive) from the likes of "SovTube":http://sovtube.com and "GSTube":http://gstube.com, if you're willing to wait a few weeks. I opted instead to order them from small online Swiss retailer "Boxtec":https://shop.boxtec.ch, who could overnight me some nice, sensitive "SI-180G tubes":http://shop.boxtec.ch/geiger-mueller-tube-180g-p-40722.html.
+
+h2. High Voltage Power Supply
+
+Geiger tubes require a relitively high voltage, 360-420V specific for the SI-180G. It turns out HV supplies for Geiger circuits are pretty simplistic. My first resource was the "DIYGeigerCounter":https://sites.google.com/site/diygeigercounter/circuit-description site, which is based on a "Nuts and Volts article":http://www.scribd.com/doc/41802301/Nuts-Volts-25-01-Jan-2004#page=44 by Tom Napier. I had a lot of trouble with the 555 approach for some reason, and I wanted to use a microcontroller anyway for USB communication, so I replaced the 555 with my favorite micro at the moment, a "Teensy 2.0":http://www.pjrc.com/teensy/ and used a PWM output to drive the power transistor. I hooked up the tube and got this:
+
+!{width:586px}../../../../images/cosmic-bad-tube.jpg!
+
+h2. Tube Trouble
+
+Not what I expected. It seemed like the tube was ionizing once and then continuing to oscillate, rather than provide nice clean individual spikes for every particle interaction. To the forums! The friendly folks on the "GeigerCounterEnthusiasts":http://tech.groups.yahoo.com/group/GeigerCounterEnthusiasts message board helped me diagnose a borked tube. My best guess is that the "quench gas" (used to quench the cascade effect caused by particle ionization) had reacted with the walls of the tube over time (as suggested by forum user mirroromatic), meaning a particle would trigger a cascade in the tube that would continue until the voltage was dropped. The result is that the tube basically turns into an oscillator, giving the waveform seen above.
+
+I confirmed that one of the tubes was working fine, but the other two were not. I got on the email-horn to Boxtec in Switzerland and explained my predicament. They immediately promised to re-test all their tubes, and they were even gracious enough to send me three new, known-good tubes, including overnight shipping so that I could complete my project. Thank you Cristoph and "Boxtec":http://boxtec.ch!
+
+h2. The PCB
+
+I had my new tubes the following Monday, and started laying out a circuit board for the circuit, including three high-voltage supplies, three detection circuits, and two NAND gates to handle the coincidence detection:
+
+!{width:586px}../../../../images/cosmic-pcb.jpg!
+
+It took about an hour and a half to mill it out on our spiffy Shurline mill, immediately after which I realized I had made a rookie mistake: I had routed everything on the top layer. Oops. My deadline was looming so I decided to go ahead and solder everything from the top rather than mill another board. In the end, it took longer to put it together than if I had just redone the board, but it worked. There are a few things I need to add/fix before I release it publicly, but for the most part it worked pretty well. One question: do I really need three separate HV supplies, or can I get away with one? I didn't have time to test, so hopefully someone will "let me know":mailto:max@kapamaki.net.
+
+At the last minute, I added a four-digit LED display to count the number of Muons detected. I used a MAX7221 LED driver because it has a really easy Arduino library, and I freehanded the circuit on the back of some protoboard. In retrospect, it would have been easer to design and mill such an easy board. Oh well. I also added neat "LED on/off button":https://www.adafruit.com/products/916 and used one of the remaining PWM pins to do a little "breathing" effect while it's off.
+
+!{width:586px}../../../../images/cosmic-testing.jpg!
+
+h2. Final Assembly
+
+I threw the PCB into a plastic "project enclosure":https://www.adafruit.com/products/905, and was surprised that it actually friction-fit pretty well. I lasered a thin strip of plastic to zip-tie the tubes to, and bent the edges with a heat gun to form it into a wide U shape, so that it fit around/above the PCB. I then lasered a front plate to hold the LED display, and friction-fit it into the clear top. I tried to laser holes on the side of the case for the button and USB port, but the plastic caught fire. Not good. I was able to scrub away most of the burn, and finished the holes with a Dremel.
+
+!{width:586px}../../../../images/cosmic-testfitting.jpg!
+Test Fitting.
+
+!{width:586px}../../../../images/cosmic-done.jpg!
+Ta-Da! Even has a nice bow and everything. 217 Muons counted in about five minutes.
+
+h2. What did I learn?
+* Start your projects early.
+** Especially if your project requires ordering parts from the USSR.
+* Geiger Tubes can be perishable. Over time, certain fill gasses can react with the metal of the tube, or the gasses can escape entirely. This kills the tube. Be wary of New Old Stock (although there isn't much choice in the reasonable price range. Over-order!)
+* If you can dream it, there's probably an online messageboard full of people who know everything about it. Be nice and they'll probably help you out.
+* If you have the time, do it right. Hacking doesn't always turn out faster than doing it right.
+* The Swiss are awesome.
+
